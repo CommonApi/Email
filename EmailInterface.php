@@ -19,9 +19,31 @@ namespace CommonApi\Email;
 interface EmailInterface
 {
     /**
-     * Send Email
+     * Return parameter value or default
+     *
+     * @param   string      $key
+     * @param   null|string $default
      *
      * @return  mixed
+     * @since   0.1
+     */
+    public function get($key, $default = null);
+
+    /**
+     * Set parameter value
+     *
+     * @param   string     $key
+     * @param   null|mixed $value
+     *
+     * @return  mixed
+     * @since   0.1
+     */
+    public function set($key, $value = null);
+
+    /**
+     * Send Email
+     *
+     * @return  $this
      * @since   0.1
      */
     public function send();
