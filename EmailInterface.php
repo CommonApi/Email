@@ -25,7 +25,7 @@ interface EmailInterface
      * @param   null|string $default
      *
      * @return  mixed
-     * @since   1.0
+     * @since   1.0.0
      */
     public function get($key, $default = null);
 
@@ -36,7 +36,7 @@ interface EmailInterface
      * @param   null|mixed $value
      *
      * @return  mixed
-     * @since   1.0
+     * @since   1.0.0
      */
     public function set($key, $value = null);
 
@@ -44,7 +44,7 @@ interface EmailInterface
      * Send Email
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function send();
 }
